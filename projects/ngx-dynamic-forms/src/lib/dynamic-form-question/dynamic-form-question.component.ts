@@ -4,9 +4,9 @@ import { FormGroup } from '@angular/forms';
 import { Subscription, tap } from 'rxjs';
 
 import { DialogueState } from 'form-extensibility-model-ts';
-import { QuestionBase } from '../../ts-dynamic-form/questions/question-base';
-import { DropdownQuestion } from 'src/app/ts-dynamic-form/questions/question-dropdown';
-import { TextboxQuestion } from 'src/app/ts-dynamic-form/questions/question-textbox';
+import { QuestionBase } from 'form-extensibility-model-ts';
+import { DropdownQuestion } from 'form-extensibility-model-ts';
+import { TextboxQuestion } from 'form-extensibility-model-ts';
 
 @Component({
   selector: 'app-question',

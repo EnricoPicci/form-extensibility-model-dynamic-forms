@@ -6,8 +6,10 @@
     "@angular/core": "^16.1.0"
   },
   "dependencies": {
-    "form-extensibility-model-ts": "^1.0.5",
     "tslib": "^2.3.0"
+  },
+  "peerDependenciesMeta": {
+    "form-extensibility-model-ts": "^1.0.5"
   },
   "sideEffects": false
 }

@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
-import { NgxDynamicFormsComponent } from './ngx-dynamic-forms.component';
-
-
+import { CommonModule } from '@angular/common';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
+import { DynamicFormSectionComponent } from './dynamic-form-section/dynamic-form-section.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    NgxDynamicFormsComponent
+    DynamicFormComponent,
+    DynamicFormQuestionComponent,
+    DynamicFormSectionComponent,
   ],
-  imports: [
-  ],
+  imports: [CommonModule, ReactiveFormsModule],
   exports: [
-    NgxDynamicFormsComponent
-  ]
+    DynamicFormComponent,
+    DynamicFormQuestionComponent,
+    DynamicFormSectionComponent,
+  ],
 })
 export class NgxDynamicFormsModule { }
