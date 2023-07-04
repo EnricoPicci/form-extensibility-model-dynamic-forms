@@ -12,12 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngx-dynamic-forms": [
-        "dist/ngx-dynamic-forms"
-      ],
-      "ngx-dynamic-forms-r": [
-        "dist/ngx-dynamic-forms-r"
-      ]
+      "ngx-dynamic-forms-r": ["dist/ngx-dynamic-forms-r"]
     },
     "declaration": false,
     "downlevelIteration": true,
@@ -27,10 +22,7 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
