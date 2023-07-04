@@ -1,0 +1,35 @@
+<h2>{{ title }}</h2>
+<div>
+  <form [formGroup]="form">
+    <div *ngFor="let element of elements" class="form-row">
+      <div [ngSwitch]="element.componentType">
+        <app-dynamic-form-section
+          *ngSwitchCase="'Section'"
+          [section]="asSection(element)"
+          [form]="form"
+        ></app-dynamic-form-section>
+
+        <app-question
+          *ngSwitchCase="'Question'"
+          [question]="asQuestion(element)"
+          [form]="form"
+        ></app-question>
+
+        <button
+          *ngSwitchCase="'Action'"
+          [disabled]="!form.valid"
+          (click)="asAction(element).function(form.value, stateService, $event)"
+        >
+          {{ asAction(element).name }}
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <div class="form-row">
+    <strong>{{ stateService.message$ | async }}</strong
+    ><br />
+  </div>
+</div>
+
+<!-- {{ form.value | json }} -->
